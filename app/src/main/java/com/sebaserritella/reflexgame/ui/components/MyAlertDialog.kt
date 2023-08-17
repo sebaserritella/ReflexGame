@@ -21,7 +21,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.sebaserritella.reflexgame.R
 
-
 @Composable
 fun MyAlertDialog(
     onDismissDialog: () -> Unit,

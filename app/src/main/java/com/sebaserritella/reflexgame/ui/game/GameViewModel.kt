@@ -48,7 +48,10 @@ class GameViewModel @Inject constructor() : ViewModel() {
                 delay(getReflexTime())
                 turnsInRow++
                 when (_currentState.value) {
-                    is GameState.GameOver -> {}
+                    is GameState.GameOver -> {
+
+                    }
+
                     is GameState.Playing -> {
                         if (verifyBoxes(
                                 selectedList, (_currentState.value as GameState.Playing).painted
@@ -69,10 +72,13 @@ class GameViewModel @Inject constructor() : ViewModel() {
                                 this.cancel()
                             }
                         }
+                        //remove all selected boxes
                         selectedList = mutableListOf()
                     }
 
-                    GameState.Start -> {}
+                    GameState.Start -> {
+
+                    }
                 }
             }
         }

@@ -24,11 +24,11 @@ android {
         }
 
         //Size of board. 4x4 = 16
-        buildConfigField ("int", "SizeBoard", "16")
+        buildConfigField("int", "SizeBoard", "16")
         //Amount of squares can flash at the same time
-        buildConfigField ("int", "MaxFlashes", "1")
+        buildConfigField("int", "MaxFlashes", "1")
         //Initial time delay between each turn
-        buildConfigField ("int", "TimeDelay", "3000")
+        buildConfigField("int", "TimeDelay", "3000")
         //Percent decrease every 5 turns
         buildConfigField "String", "PercentDecrease", "\"0.9\""
 

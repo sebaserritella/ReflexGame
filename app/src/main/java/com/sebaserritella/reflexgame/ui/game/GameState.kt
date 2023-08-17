@@ -4,16 +4,12 @@ import androidx.compose.runtime.Immutable
 
 @Immutable
 sealed interface GameState {
-
-    //
     object Start : GameState
 
     data class Playing(
-        val painted: List<Int>,
-        val score: Int
+        val painted: List<Int>, val score: Int
     ) : GameState
 
-    //freeze data
     data class GameOver(
         val score: Int
     ) : GameState
