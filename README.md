@@ -46,11 +46,11 @@ This is the first screen of the game visualizing the board, the points collected
 
 ###  Playing 1
 This screenshot show the game after at least 5 turns. In this screenshot the board have a random box painted. The user collected 5 points in 21 seconds.
-![playing 1](figures/Playing 1.png)
+![playing 1](figures/Playing1.png)
 
 ###  Playing 2
 This screenshot show the game after 28 seconds. The user collected 3 points in 28 seconds. Which means the user progress more in time but has less points.
-![playing 2](figures/Playing 2.png)
+![playing 2](figures/Playing2.png)
 
 ###  Game over
 Finally, when the user has 0 points the game is over. The Alert Dialog appears and there is a button to go to the initial board and start the game again. 
