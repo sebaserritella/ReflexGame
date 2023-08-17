@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "944866811957",
+    "project_id": "reflexgame-d618b",
+    "storage_bucket": "reflexgame-d618b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944866811957:android:a98db5fb1ef6db789d117c",
+        "android_client_info": {
+          "package_name": "com.sebaserritella.reflexgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944866811957-tfegg06tuo4shnfelf75c1dkqfki89uo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADyjxhRAgEeZNsaVMfF5xp4C7O7QoHaIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944866811957-tfegg06tuo4shnfelf75c1dkqfki89uo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
