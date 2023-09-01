@@ -10,4 +10,7 @@
     <string name="playing">Playing</string>
     <string name="start">Start</string>
     <string name="points">Points: %1$d</string>
+    <string name="check_buildconfig">Check BuildConfig</string>
+    <string name="the_number_of_flashes_is_greater_than_the_board">The number of flashes is greater than the board</string>
+    <string name="close">Close</string>
 </resources>

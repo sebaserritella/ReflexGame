@@ -23,6 +23,9 @@ import com.sebaserritella.reflexgame.R
 
 @Composable
 fun MyAlertDialog(
+    titleText: String = stringResource(id = R.string.empty),
+    bodyText: String = stringResource(R.string.fail),
+    buttonText: String = stringResource(R.string.play_again),
     onDismissDialog: () -> Unit,
 ) {
     AlertDialog(modifier = Modifier.clip(shape = RoundedCornerShape(20.dp)),
@@ -43,19 +46,19 @@ fun MyAlertDialog(
                         contentColor = Color.White
                     )
                 ) {
-                    Text(stringResource(R.string.play_again), fontSize = 14.sp)
+                    Text(buttonText, fontSize = 14.sp)
                 }
             }
         },
-        title = { Text(text = stringResource(id = R.string.empty)) },
+        title = { Text(text = titleText) },
         text = {
             Column(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = stringResource(R.string.fail),
-                    fontSize = 24.sp,
+                    text = bodyText,
+                    fontSize = 18.sp,
                     color = Color.Red,
                     fontWeight = FontWeight.Bold
                 )

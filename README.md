@@ -4,7 +4,7 @@
 
 - [Clean Architecture][architecture] This app is structured using single module clean architecture
 
-- [MVI][mvi] The presentation layer uses mvi pattern
+- [MVVM][mvvm] The presentation layer uses MVVM pattern
 
 - [Jetpack Compose][compose] For creating beautiful screens
 
@@ -18,7 +18,7 @@
 
 
   [architecture]: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
-  [mvi]: https://developer.android.com/topic/architecture
+  [mvvm]: https://developer.android.com/topic/architecture
   [compose]: https://developer.android.com/jetpack/compose?gclid=CjwKCAjwyIKJBhBPEiwAu7zll9bjLDRqSH7XtNL-G0txRAeT_QLCcws-_VYPI9Ea-cxFzEC69YbslxoC6BEQAvD_BwE&gclsrc=aw.ds
   [viewmodel]: https://developer.android.com/topic/libraries/architecture/viewmodel
   [hilt]: https://developer.android.com/training/dependency-injection/hilt-android

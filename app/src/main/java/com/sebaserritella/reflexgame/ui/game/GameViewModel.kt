@@ -100,7 +100,11 @@ class GameViewModel @Inject constructor() : ViewModel() {
     private fun getRandom(): List<Int> {
         val result = mutableListOf<Int>()
         for (index in 1..maxValues) {
-            result.add(Random.nextInt(0, sizeBoard))
+            var randomGeneratedValue = Random.nextInt(0, sizeBoard)
+            while (result.contains(randomGeneratedValue)) {
+                randomGeneratedValue = Random.nextInt(0, sizeBoard)
+            }
+            result.add(randomGeneratedValue)
         }
         return result
     }
@@ -123,5 +127,9 @@ class GameViewModel @Inject constructor() : ViewModel() {
         }
 
         return true
+    }
+
+    fun setState(gameOver: GameState) {
+        _currentState.value = gameOver
     }
 }

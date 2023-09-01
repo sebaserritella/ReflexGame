@@ -32,6 +32,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.sebaserritella.reflexgame.BuildConfig
 import com.sebaserritella.reflexgame.R
 import com.sebaserritella.reflexgame.ui.components.MyAlertDialog
 import kotlinx.coroutines.delay
@@ -42,7 +43,7 @@ fun GameScreen(
     viewModel: GameViewModel, gameState: GameState, sizeBoard: Int
 ) {
     if (gameState is GameState.GameOver) {
-        MyAlertDialog {
+        MyAlertDialog() {
             viewModel.resetGame()
         }
     }
@@ -56,7 +57,9 @@ fun GameScreen(
 @Composable
 fun Board(viewModel: GameViewModel, gameState: GameState, sizeBoard: Int) {
     Box {
-        LazyVerticalGrid(columns = GridCells.Fixed(4), contentPadding = PaddingValues(
+        LazyVerticalGrid(columns = GridCells.Fixed(
+            Math.sqrt(BuildConfig.SizeBoard.toDouble()).toInt()
+        ), contentPadding = PaddingValues(
             start = 12.dp, top = 16.dp, end = 12.dp, bottom = 16.dp
         ), content = {
             items(sizeBoard) {

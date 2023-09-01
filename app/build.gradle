@@ -32,6 +32,8 @@ android {
         //Percent decrease every 5 turns
         buildConfigField "String", "PercentDecrease", "\"0.9\""
 
+
+
     }
 
     buildTypes {
@@ -116,6 +118,10 @@ dependencies {
     // When using the BoM, don't specify versions in Firebase dependencies
     implementation("com.google.firebase:firebase-crashlytics-ktx")
     implementation("com.google.firebase:firebase-analytics-ktx")
+
+    testImplementation "io.mockk:mockk:1.12.5"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3"
+    testImplementation "androidx.arch.core:core-testing:2.2.0"
 }
 
 // Allow references to generated code
